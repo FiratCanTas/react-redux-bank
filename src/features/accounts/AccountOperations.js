@@ -9,9 +9,11 @@ const AccountOperations = () => {
   const [loanPurpose, setLoanPurpose] = useState("");
   const [currency, setCurrency] = useState("USD");
   const dispatch = useDispatch();
-  const { currentLoan, currentLoanPurpose, isLoading } = useSelector(
-    (store) => store.account
-  );
+  const {
+    loan: currentLoan,
+    loanPurpose: currentLoanPurpose,
+    isLoading,
+  } = useSelector((store) => store.account);
 
   const handleDeposit = () => {
     if (!depositAmount) return;
