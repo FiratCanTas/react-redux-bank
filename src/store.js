@@ -3,7 +3,7 @@
 // import { composeWithDevTools } from "redux-devtools-extension";
 import { configureStore } from "@reduxjs/toolkit";
 import accountReducer from "./features/accounts/accountSlice";
-import { customerReducer } from "./features/customers/customerSlice";
+import customerReducer from "./features/customers/customerSlice";
 
 //?Redux Toolkit
 const store = configureStore({
